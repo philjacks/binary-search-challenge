@@ -2,13 +2,13 @@ const binarySearch = (num, array) => {
   // sort array in order
   array.sort((a, b) => a - b);
 
-  // declare beginning & end of array as variables
+  // declare start & end of array as variables
   let start = array[0];
   let end = array.length - 1;
 
   // repeat process while start & end are seperate
   while (start <= end) {
-    // figure thr middle index & number
+    // figure the middle index & number
     let mid = Math.floor((start + end) / 2);
     let midNum = array.at(mid);
 
@@ -32,5 +32,3 @@ const binarySearch = (num, array) => {
 console.log(
   binarySearch(90, [1, 4, 1, 9, 5, 17, 11, 13, 25, 15, 88, 56, 42, 90, 67])
 );
-
-// [1, 4, 5, 9, 11, 12, 13, 15, 17, 25];
